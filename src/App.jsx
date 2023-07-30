@@ -46,13 +46,13 @@ const App = () => {
   }
 
   const numItems = infos.length;
-
+  const numItemsPacked = infos.filter((info) => info.packed).length;
   return (
     <div className='app'>
       <Header />
       <Form handleInfos={handleInfos} />
       <PackList items={infos} deleteItem={deleteItem} checkItem={checkItem} />
-      <Stat numItems={numItems} />
+      <Stat numItems={numItems} numItemsPacked={numItemsPacked} />
     </div>
   )
 }
