@@ -40,11 +40,16 @@ const App = () => {
     setInfos(items => items.filter(item => item.id !== id))
   }
 
+  const checkItem = (id) => {
+    setInfos(items => items.map(item => item.id === id ? { ...item, packed: !item.packed } : item))
+
+  }
+
   return (
     <div className='app'>
       <Header />
       <Form handleInfos={handleInfos} />
-      <PackList items={infos} deleteItem={deleteItem} />
+      <PackList items={infos} deleteItem={deleteItem} checkItem={checkItem} />
       <Stat />
     </div>
   )
