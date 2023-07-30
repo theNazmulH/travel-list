@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+body{
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.app{
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+input{
+    padding: 0 15px;
+    border: 1px solid #eee;
+}
+button{
+    background: transparent;
+    padding: 0;
+    border: 0;
+    display: flex;
+    align-items: center;
+}
+button,
+.list{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.list button{
+    margin-left: 5px;
+    cursor: pointer;
+}
+.list span{
+    display: flex;
+    align-items: center;
+}
+.list li{
+    gap: 5px;
+    display: flex;
+    align-items: center;
+
+}
+select{
+    height: 45px;
+    width: 80px;
+    text-align: center;
+    border: 1px solid #eee;
+}
+form h3{
+    width: 100%;
+}
+form{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+form input{
+    width: calc(100% - 220px);
+}
+.submit{
+    background: #16b907;
+    height: 45px;
+    width: 100px;
+    text-align: center;
+    color: #fff;
+    display: block;
+
+}
+.close{
+    color: red;
+}
+.add-form{
+    margin-bottom: 10px;
+}
+ul.list li{
+    margin-bottom: 5px;
+}
+ul.list{
+    padding-left: 0;
+}
