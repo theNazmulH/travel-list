@@ -2,10 +2,10 @@ import React from 'react';
 
 import './Stat.module.css';
 
-const Stat = () => {
+const Stat = ({ numItems }) => {
   return (
     <div>
-      You have X items on your list. You already packed x (x%)
+      You have {numItems} items on your list. You already packed x (x%)
     </div>
   )
 }

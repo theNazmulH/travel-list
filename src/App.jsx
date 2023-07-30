@@ -45,12 +45,14 @@ const App = () => {
 
   }
 
+  const numItems = infos.length;
+
   return (
     <div className='app'>
       <Header />
       <Form handleInfos={handleInfos} />
       <PackList items={infos} deleteItem={deleteItem} checkItem={checkItem} />
-      <Stat />
+      <Stat numItems={numItems} />
     </div>
   )
 }
